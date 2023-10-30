@@ -3,9 +3,12 @@ body {
   margin: 0;
   padding: 0;
 }
-
-h1, h2 {
+h1{
   text-align: center;
+}
+h2 {
+  text-align: center;
+  padding-bottom: 2%;
 }
 
 header {
@@ -31,20 +34,49 @@ nav ul li a {
   text-decoration: none;
 }
 
-section {
-  padding: 2.5% 15%;
+.grid{
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  grid-template-rows: repeat(1,auto);
   background-color: #ffe9c0;
+  padding-top: 5%;
 }
 
-.image-container {
-  display: flex;
+.item1{
+  display: grid;
+  grid-template-rows: repeat(2,auto);
+  justify-content:center;
+  padding-top: 5%;
+  padding-left: 10%;
+  margin-right: -20%;
+}
+
+#vestimentas{
+  padding-top: 5%;
+}
+#contacto {
+  padding: 3% 15% 2.5% 15%;
+  background-color: #ffe9c0;
+}
+#contacto h2{
+  padding-bottom: 0%;
+}
+.item2{
+  width:100%;
   justify-content: center;
-  margin-top: 20px;
+}
+.image-container {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-rows: repeat(3,auto);
+  grid-template-columns: repeat(1,auto);
+  width: 100%;
 }
 
 .image-container img {
-  width: 300px;
-  margin: 0 10px;
+  padding: 2%;
+  width: 50%;
 }
 
 form {
@@ -76,6 +108,15 @@ footer {
   color: #fff;
   text-align: center;
   padding: 1%;
+}
+#foot-icon{
+  display: grid;
+  grid-template-columns: repeat(5,auto);
+  justify-content: center;
+}
+
+#foot-icon svg{
+  padding:0% 10%;
 }
 
 @media(width<960px){
